@@ -12,12 +12,19 @@ This script is built for Python 3.6 using `venv` and `pip`
 ./setup
 ```
 
+#### Newdir
+
+Since distutils is required for each new module, this little script autmatically generates the right `setup.py` file for you
+
+```sh
+./newdir <dirname>
+```
+
 #### Build
 
 Each `pyx` module from the tutorial gets its own dir.
 
 ```sh
-# from the root of the project
 ./build <dirname>
 ```
 
