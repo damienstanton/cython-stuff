@@ -2,7 +2,7 @@
 
 #### Why?
 
-The Python-C API is gross and requires a huge amount of hand-written C wrapper code. However, compiled C extensions are probably going to be very useful for the vehicle and robotics applications we are working on. Cython achieves this with 99% compatibility with Python syntax. For our cases, this fits much better than, say a DSL in Lua or cgo.
+The Python-C API is gross and requires a huge amount of hand-written C wrapper code. However, compiled C extensions are probably going to be very useful for the vehicle and robotics applications we are working on. Cython achieves this with 99% compatibility with Python syntax. For our cases, this fits much better than, say a DSL in Lua or building something in  cgo. One clear tradeoff here is size: anything that needs to be small and performant should probably just be written in Go.
 
 #### Setup
 
